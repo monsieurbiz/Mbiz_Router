@@ -156,6 +156,12 @@ class Router implements RouterInterface
                 'controller_router' => $this,
                 'router' => $router
         ]);
+        
+        // Check if observer prefer to forward
+        if ($router->getForward()) {
+            $this->dispatched = true;
+            return $this->actionFactory->create('Magento\Framework\App\Action\Forward');
+        }
 
         // Set module, controller, action and params for redirect
         $request->setModuleName($router->getModule())
