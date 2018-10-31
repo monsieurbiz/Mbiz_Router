@@ -1,30 +1,22 @@
-Mbiz Router for Magento 2
-=================
+# Router for Magento 2
 
 ## Introduction
 
-Your routes on Magento 2
+Your routes on Magento 2.
 
 ## Installation
 
 ```
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/monsieurbiz/Mbiz_Router.git"
-        }
-    ],
-    "require": {
-        "monsieurbiz/Mbiz_Router": "master"
-    }
-}
+composer require monsieurbiz/mbiz_router=dev-master
 ```
 
-## Static URL
-*   URL: `http://example.org/foo.hmtl`
+## Usage
+
+### Static URL
+
+*   URL: `http://example.org/foo.html`
 *   Match: `http://example.org/foo/index/index`
-*   `config.xml`:
+*   `config.xml`:  
 ```xml
 <default>
     <mbiz_router>
@@ -39,10 +31,11 @@ Your routes on Magento 2
 </default>
 ```
 
-## Regex URL
+### Regex URL
+
 *   URL: `http://example.org/foo.hmtl`
 *   Match: `http://example.org/foo/index/index`
-*   `config.xml`:
+*   `config.xml`:  
 ```xml
 <default>
     <mbiz_router>
@@ -60,6 +53,20 @@ Your routes on Magento 2
     </mbiz_router>
 </default>
 ```
+
+## Contribute
+
+Please enjoy creating Pull Requests.
+
+## License
+
+This source code is provided under MIT License.
+
+## Authors
+
+Originally created by [@jacquesbh](https://github.com/jacquesbh/jbh_router), we made it for Magento 2.
+
+Also, please find [all contributors in the dedicated page](https://github.com/jacquesbh/jbh_router/graphs/contributors).
 
 ---
 *On the road again*
